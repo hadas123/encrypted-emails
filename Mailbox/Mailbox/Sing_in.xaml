@@ -1,0 +1,15 @@
+﻿<Window x:Class="Mailbox.Sing_in"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mailbox"
+        mc:Ignorable="d"
+        Title="Sing_in" Height="300" Width="300">
+    <Grid>
+        <Button x:Name="SingInButton" Click="SingInButton_Click"  Content="Sing in" Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0,0,0,70"/>
+        <PasswordBox x:Name="passwordBox"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" CommandManager.PreviewCanExecute="passwordBox_PreviewCanExecute" />
+        <PasswordBox x:Name="verifyPasswordBox"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0,70,0,0" CommandManager.PreviewCanExecute="passwordBox_PreviewCanExecute" />
+
+    </Grid>
+</Window>

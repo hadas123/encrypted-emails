@@ -1,0 +1,18 @@
+﻿<Window x:Class="Mailbox.AddAddress"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mailbox"
+        mc:Ignorable="d"
+        Title="AddAddress" Height="300" Width="300">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center"><Hyperlink NavigateUri="http://www.bing.com" RequestNavigate="Hyperlink_RequestNavigate">http://www.bing.com</Hyperlink></TextBlock>
+
+        <Button x:Name="AddButton" Click="AddButton_Click"  Content="Add/Change Public Key" Grid.Row="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0,0,0,180"/>
+        <TextBox x:Name="UserNameBox"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0,0,0,120" Text="Email"/>
+        <TextBox x:Name="KeyLocationBox"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Margin="0,0,0,70" Text="Key Loction"/>
+
+
+    </Grid>
+</Window>
